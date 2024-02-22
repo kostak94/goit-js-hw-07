@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  margin: 16px;
+  font-family: "Montserrat";
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+/* ==========TASK-1========== */
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.item > h2 {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.item {
+  background-color: #f6f6fe;
+  width: 392px;
+  padding: 24px;
+  justify-content: center;
+  border-radius: 8px;
+}
+.item > ul > li {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  color: #2e2f42;
+  padding: 8px 16px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+.item > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* =========TASK-2======= */
+
+img {
+  width: 360px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.gallery > li {
+  width: calc((100% - 60px) / 3);
+}
+
+/* =========TASK-3======= */
+
+#name-input {
+  width: 360px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  padding: 8px 16px;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+#name-input ~ h1 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #2e2f42;
+  margin-top: 25px;
+}
+
+/* =========TASK-4======= */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  gap: 8px;
+}
+
+.login-form > input {
+  border: 2px solid #999898;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.login-form > button {
+  max-width: 86px;
+  margin-top: 8px;
+  display: inline-block;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #ffffff;
+  background-color: #4e75ff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+.login-form > button:hover {
+  background-color: #6c8cff;
+}
+
+.login-form > label {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #2e2f42;
+}
+
+/* =========TASK-5======= */
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget > p {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: #2e2f42;
+}
+
+.change-color {
+  max-width: 148px;
+  display: inline-block;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #ffffff;
+  background-color: #4e75ff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+}
+.change-color:hover {
+  background-color: #6c8cff;
+}
+
+/* =========TASK-6======= */
+#controls {
+  background-color: #f6f6fe;
+  padding: 32px;
+  display: flex;
+  gap: 16px;
+}
+#boxes {
+  margin-top: 16px;
+  background-color: #f6f6fe;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#controls > input {
+  color: #2e2f42;
+  width: 150px;
+  background-color: #f6f6fe;
+  border: 2px solid #808080;
+  border-radius: 8px;
+  padding-left: 70px;
+}
+button[data-create] {
+  justify-content: center;
+  width: 120px;
+  display: flex;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #ffffff;
+  background-color: #4e75ff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+}
+button[data-create]:hover {
+  background-color: #6c8cff;
+}
+
+button[data-destroy] {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #ffffff;
+  background-color: #ff4e4e;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+}
+button[data-destroy]:hover {
+  background-color: #ff7070;
+}
